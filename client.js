@@ -7,6 +7,7 @@ function readyNow() {
 loadImages();
 promptPlayer();
 $('.my-peeps').on('click', 'img', function (){
+    yesOrNo();
     resetGame();
     randomizePersons();
 });
@@ -22,8 +23,14 @@ function promptPlayer() {
     $('#call-to-action').append(`<h2 class="random-name">Can you find ${randomizePersons()}?</h2>`)
 }
 
+function yesOrNo() {
+    // is the person clicked equal to name?
+        
+    }
+}
+
 function resetGame() {
-    
+    $('.random-name').empty();
 }
  
 function randomizePersons() {
@@ -32,11 +39,10 @@ function randomizePersons() {
     return persons;
 }
 
+function randomNumber(min, max){
+    return Math.floor(Math.random() * (1 + max - min) + min);
+}
 
 function resetGame() {
 
-}
-
-function randomNumber(min, max){
-    return Math.floor(Math.random() * (1 + max - min) + min);
 }
