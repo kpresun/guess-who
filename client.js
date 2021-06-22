@@ -14,12 +14,12 @@ $('.my-peeps').on('click', 'img', function (){
 
 function loadImages() {
     for (const persons of people) {
-        $('.image-area').append(`<div class="my-peeps><img src="https://github.com/${persons.githubUsername}.png?size=250"></div>`)
+        $('.image-area').append(`<img src="https://github.com/${persons.githubUsername}.png?size=250">`)
     }
 }
 
 function promptPlayer() {
-    $('#call-to-action').append(`<h2 class="random-name">'Can you find ${name}?'</h2>`)
+    $('#call-to-action').append(`<h2 class="random-name">Can you find ${randomizePersons()}?</h2>`)
 }
 
 function resetGame() {
@@ -27,7 +27,9 @@ function resetGame() {
 }
  
 function randomizePersons() {
-    $('.prompting-area').append()
+    i = randomNumber(0, people.length);
+    persons = people[i].name;
+    return persons;
 }
 
 
