@@ -25,7 +25,7 @@ function promptPlayer() {
 
 function yesOrNo() {
     // is the person clicked equal to name?
-      (img === ${randomizePersons}.img) ? $('.prompting-area').append(`<h2>You guessed right!</h2>`) : $('.prompting-area').append(`<h2>You guessed wrong, guess again.</h2>`)
+      ( === ${randomizePersons}. ? $('.prompting-area').append(`<h2>You guessed right!</h2>`) : $('.prompting-area').append(`<h2>You guessed wrong, guess again.</h2>`);
     }
 
 
